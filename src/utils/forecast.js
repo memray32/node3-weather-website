@@ -15,8 +15,9 @@ const forecast=(latitude,longitude,callback) =>{
         }
         else{
         
+           
             callback(undefined,
-                body.current.weather_descriptions[0] +'. The current tempature is '+ body.current.temperature+ ' .The Likely tempature is ' + body.current.feelslike
+                body.current.weather_descriptions[0] +'. The current tempature is '+ body.current.temperature+ ' .The Likely tempature is ' + body.current.feelslike +'. The Humidity is '+body.current.humidity+"%."
             )
         }
 
